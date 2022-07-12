@@ -8,6 +8,7 @@
 - Created for this [assignment](https://www.theodinproject.com/lessons/foundations-recipes#assignment) in The Odin Project curriculum
 
 ## Goals
-- Practice HTML (boilerplate, comments, headings, paragraphs, emphasis, links, images, etc)
+- Practice HTML
+- Practice CSS
 - Commit often with Git
 - Get familiar with VSCode shortcuts

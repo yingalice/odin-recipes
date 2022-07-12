@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Antic&family=Jura:wght@300&family=NTR&family=Prompt:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+body {
+  margin: 0;
+}
+
+h1 {
+  margin-top: 0;
+}
+
+img {
+  max-width: 60%;
+  height: auto;
+  display: block;
+  margin: auto;
+  border-radius: 20px;
+  box-shadow: .3em .3em .8em rgb(90, 90, 90);
+}
+
+a {
+  position: relative;
+  color: rgb(0, 95, 175);
+  text-decoration: none;
+}
+
+a::before {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(255, 165, 0);
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform .3s ease-in-out;
+}
+
+a:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.content {
+  font-family: 'Antic', Arial, Helvetica, sans-serif;
+  max-width: 960px;
+  margin: auto;
+  padding: 0% 5%;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.flex-left {
+  flex: 1;
+}
+
+.flex-right {
+  flex: 2;
+}
+
+.page-title, .section-title {
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(0, 95, 175);
+}
+
+.page-title {
+  background-color: rgba(220, 240, 240, 0.5);
+  text-transform: uppercase;
+  text-align: center;
+  border-bottom: 1px solid rgb(0, 0, 0);
+  padding: .6em;
+}
+
+.section-title {
+  display: inline-block;
+  border: 1px solid;
+  border-radius: .5em;
+  padding: .5em;
+  margin: 1em 0 .3em;
+}
+
+.section-title:hover {
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 95, 175);
+}
+
+.subsection-title {
+  color: rgb(55, 115, 165);
+}
+
+.time::before {
+  font: 1.5em 'Material Icons';
+  color: rgb(255, 165, 0);
+  content: "schedule";
+  padding-right: .3em;
+}
+
+.item {
+  position: relative;
+  left: 1em;
+}
+
+.ingredients {
+  list-style: none;
+  margin-left: -1em;
+}
+
+.measurement {
+  color: rgb(255, 165, 0);
+  font-weight: bold;
+}
+
+.steps {
+  counter-reset: li;
+  list-style: none;
+}
+
+.steps li {
+  line-height: 1.4em;
+  margin-bottom: .3em;
+}
+
+.steps li::before {
+  content: counter(li);
+  counter-increment: li;
+  display: inline-block;
+  color: white;
+  background-color: rgb(255, 165, 0);
+  width: 1.3em;
+  height: 1.3em;
+  border-radius: 3px;
+  margin-left: -1.3em;
+  text-align: center;
+}
