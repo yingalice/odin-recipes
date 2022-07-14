@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Antic&family=Jura:wght@300&family=NTR&family=Prompt:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Antic&display=swap');
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 
 body {
@@ -99,31 +99,31 @@ a:hover::before {
 }
 
 .item {
-  position: relative;
-  left: 1em;
+  display: block;
+  margin-top: -1.3em;
+  margin-left: 1em;
+  margin-bottom: .3em;
+  line-height: 1.3em;
 }
 
-.ingredients {
+ul.ingredients, ol.steps {
   list-style: none;
-  margin-left: -1em;
 }
 
-.measurement {
+ul.ingredients input[type=checkbox] {
+  margin-left: -1.3em;
+}
+
+ul.ingredients .measurement {
   color: rgb(255, 165, 0);
   font-weight: bold;
 }
 
-.steps {
+ol.steps {
   counter-reset: li;
-  list-style: none;
 }
 
-.steps li {
-  line-height: 1.4em;
-  margin-bottom: .3em;
-}
-
-.steps li::before {
+ol.steps li::before {
   content: counter(li);
   counter-increment: li;
   display: inline-block;
